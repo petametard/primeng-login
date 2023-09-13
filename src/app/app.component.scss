@@ -1,0 +1,39 @@
+@media screen and (max-width: 489px) {
+  .p-formgroup-inline {
+    .p-field {
+      margin-bottom: 1em !important;
+    }
+  }
+}
+
+.layout-content .content-section.implementation > h3 {
+  font-weight: 600;
+}
+
+textarea {
+  resize: none;
+}
+
+.body-login {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+.login {
+  width: 100%;
+  max-width: 273px;
+  text-align: center;
+  border-radius: 4px;
+  background: #fff;
+  float: none;
+  position: relative;
+  color: #7e7975;
+  box-shadow: 0 2px 2px rgb(0 0 0 /20%), 0 1px 5px rgb(0 0 0 /20%),
+    0 0 0 12px rgb(255, 255, 255 / 40%);
+}
+
+.bg-bhd {
+  background-color: #54b948;
+}
