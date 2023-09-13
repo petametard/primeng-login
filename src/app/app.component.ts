@@ -5,7 +5,7 @@ import { Validators, FormControl, FormGroup } from '@angular/forms';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
   ngOnInit(): void {
@@ -16,24 +16,6 @@ export class AppComponent implements OnInit {
   }
   loginForm: FormGroup;
   submitted = false;
-
-  // selectedState: any = null;
-
-  // states: any[] = [
-  //   { name: 'Arizona', code: 'Arizona' },
-  //   { name: 'California', value: 'California' },
-  //   { name: 'Florida', code: 'Florida' },
-  //   { name: 'Ohio', code: 'Ohio' },
-  //   { name: 'Washington', code: 'Washington' },
-  // ];
-
-  // cities1: any[] = [];
-
-  // cities2: any[] = [];
-
-  // city1: any = null;
-
-  // city2: any = null;
 
   onSubmit() {
     this.submitted = true;

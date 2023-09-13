@@ -1,4 +1,312 @@
+/* You can add global styles to this file, and als-o import other style files */
+
+html,
 body {
-  padding: 2em;
-  font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, Roboto, Helvetica, Arial, sans-serif, “Apple Color Emoji”, “Segoe UI Emoji”, “Segoe UI Symbol”;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  background-color: #f8f9fb;
+}
+
+.title {
+  color: black;
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.subtitle {
+  color: gray;
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-gray {
+  background-color: #ebebeb;
+}
+
+.with {
+  width: 85%;
+}
+
+.button-height {
+  height: 50px;
+}
+
+.bg-bhd {
+  background-color: #54b948;
+  /* background:  url('./assets//images/bhd-building.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;*/
+}
+
+.container {
+  margin: 5px 15px 0 5px;
+}
+
+.magin-side {
+  margin: 0 7% 0 7%;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.white {
+  color: #ffff;
+}
+
+.white:hover {
+  color: rgb(228, 225, 225);
+}
+
+.rows::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.box {
+  /* border: 1px solid red;*/
+  float: left;
+  padding: 5px;
+}
+
+.cols-1 {
+  width: 8.33%;
+}
+
+.cols-2 {
+  width: 16.66%;
+}
+
+.cols-3 {
+  width: 25%;
+}
+
+.cols-4 {
+  width: 33.33%;
+}
+
+.cols-5 {
+  width: 41.66%;
+}
+
+.cols-6 {
+  width: 50%;
+}
+
+.cols-7 {
+  width: 58.33%;
+}
+
+.cols-8 {
+  width: 66.66%;
+}
+
+.cols-9 {
+  width: 75%;
+}
+
+.cols-10 {
+  width: 83.33%;
+}
+
+.cols-11 {
+  width: 91.66%;
+}
+
+.cols-12 {
+  width: 100%;
+  margin-top: 25px;
+  /* padding-bottom: 20px;*/
+}
+
+.float-container {
+  padding-top: 70px;
+}
+
+.label {
+  display: contents;
+  font-size: 0.83em;
+  font-weight: bold;
+}
+
+.p-float-label input:focus ~ label,
+.p-float-label input.p-filled ~ label,
+.p-float-label textarea:focus ~ label,
+.p-float-label textarea.p-filled ~ label,
+.p-float-label .p-inputwrapper-focus ~ label,
+.p-float-label .p-inputwrapper-filled ~ label {
+  top: -1.1rem;
+  font-size: 15px;
+}
+
+.btn-option {
+  width: 52%;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.btn-option2 {
+  display: inline-table;
+  float: left;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .cols-1 {
+    width: 100%;
+  }
+
+  .cols-2 {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .cols-3 {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .cols-4 {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .cols-5 {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .cols-6 {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .cols-7 {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .cols-8 {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .cols-9 {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .cols-10 {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .cols-11 {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .cols-12 {
+    width: 100%;
+    margin-top: 25px;
+    /* padding-bottom: 20px;*/
+  }
+
+  .btn-option {
+    width: 80%;
+    display: inline-table;
+    margin-bottom: 20px;
+  }
+}
+
+.icon-set {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.layout-footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  text-align: right;
+  color: transparent;
+}
+
+.layout-footer:hover {
+  color: black;
+}
+
+.example-card {
+  max-width: 170px;
+  max-height: 170px;
+  height: 160px;
+  width: 160px;
+}
+
+.example-card:hover {
+  height: 170px;
+  width: 170px;
+}
+
+.parent {
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+
+.child {
+  display: inline-block;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+}
+
+.child-2 {
+  display: inline-block;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+  margin: 3px;
+}
+
+.ui-nav-bg-color {
+  background-color: rgb(248, 247, 247);
+}
+
+.ui-table-margin {
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.margin-left-1 {
+  margin-left: 1%;
+}
+
+.ui-table-margin-border {
+  margin-top: 1%;
+  margin-right: 5%;
+  margin-left: 5%;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  padding: 0.1rem;
+}
+
+.width-100 {
+  width: 100%;
 }
